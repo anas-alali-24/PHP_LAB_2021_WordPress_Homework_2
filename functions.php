@@ -1,8 +1,8 @@
 <?php 
 if (!function_exists('PHP_LAB_2021_WordPress_Homework_2_setup')) :
-    function PHP_LAB_2021_WordPress_Homework_2_setup()
-    {
-
+    function PHP_LAB_2021_WordPress_Homework_2_setup() {
+        load_theme_textdomain( 'PHP_LAB_2021_WordPress_Homework_2', get_template_directory() . '/languages' );
+        add_theme_support( 'title-tag' );
     }
 endif;
 add_action('after_setup_theme', 'PHP_LAB_2021_WordPress_Homework_2_setup');
