@@ -59,7 +59,7 @@ body {
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
-      background-image: url(../images/heading-bg.jpg);
+      background-image: url(../PHP_LAB_2021_WordPress_Homework_2/assets/images/heading-bg.jpg);
   }
   
   .page-heading .text-content h4 {
@@ -197,7 +197,7 @@ body {
       color: #f48840!important;
   }
   .navbar .navbar-brand {
-      float: 	left;
+
       margin-top: -12px;
       outline: none;
   }
@@ -216,12 +216,54 @@ body {
       font-style: normal;
       color: #f48840;
   }
+  header .mynav {
+    flex-direction: row;
+    margin-left: auto!important;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    float: left;
+    text-align: center;
+}
+header .mynav ul {
+    display: flex!important;
+    flex-direction: row;
+    margin-left: auto!important;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    float: left;
+    text-align: center;
+}
+header .mynav ul li {
+    flex-direction: row;
+    margin: 0px 15px;
+    display: flex!important;
+    padding: 0;
+    float: left;
+    text-align: center;
+    flex-basis: auto;
+}
+header .mynav ul li a {
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #1e1e1e;
+    transition: all 0.3s;
+}
+header .mynav ul li a:hover,
+header .mynav ul li a.active,
+header .mynav ul li a.show,
+header .mynav ul li .show.a
+{
+    color: #f48840;
+}
   #navbarResponsive {
       z-index: 999;
   }
-  .navbar-collapse {
-      text-align: center;
-  }
+  
   .navbar .navbar-nav .nav-item {
       margin: 0px 15px;
   }
@@ -366,7 +408,7 @@ body {
   
   .call-to-action .main-content {
       padding: 40px;
-      background-image: url(../images/cta-bg.jpg);
+      background-image: url(../PHP_LAB_2021_WordPress_Homework_2/assets/images/cta-bg.jpg);
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -569,7 +611,7 @@ body {
   }
   
   .blog-posts .comments ul li {
-      display: inline-block;
+      display:inline-flex;
       margin-bottom: 20px;
       padding-bottom: 20px;
       border-bottom: 1px solid #eee;
@@ -1040,6 +1082,8 @@ body {
           background-color: #fff;
           box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
       }
+       
+
       .navbar .navbar-nav .nav-item {
           border-bottom: 1px solid #eee;
       }
