@@ -225,7 +225,7 @@ body {
     float: left;
     text-align: center;
 }
-header .mynav ul {
+header .mynav {
     display: flex!important;
     flex-direction: row;
     margin-left: auto!important;
@@ -235,7 +235,7 @@ header .mynav ul {
     float: left;
     text-align: center;
 }
-header .mynav ul li {
+header .mynav li {
     flex-direction: row;
     margin: 0px 15px;
     display: flex!important;
@@ -244,7 +244,7 @@ header .mynav ul li {
     text-align: center;
     flex-basis: auto;
 }
-header .mynav ul li a {
+header .mynav li a {
     text-transform: capitalize;
     font-size: 15px;
     font-weight: 800;
@@ -253,10 +253,10 @@ header .mynav ul li a {
     color: #1e1e1e;
     transition: all 0.3s;
 }
-header .mynav ul li a:hover,
-header .mynav ul li a.active,
-header .mynav ul li a.show,
-header .mynav ul li .show.a
+header .mynav li a:hover,
+header .mynav li a.active,
+header .mynav li a.show,
+header .mynav li .show.a
 {
     color: #f48840;
 }

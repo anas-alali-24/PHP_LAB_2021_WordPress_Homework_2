@@ -45,7 +45,7 @@ https://templatemo.com/tm-551-stand-blog
           </button>
           <?php
            wp_nav_menu( array(
-             'theme_location' => 'Header-Menu',
+             'theme_location' => 'location',
              'menu_class' => 'mynav',
               )
 
