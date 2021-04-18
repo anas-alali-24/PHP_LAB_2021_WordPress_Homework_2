@@ -166,8 +166,8 @@ get_header();
                             <a href="<?php the_permalink(); ?>"><?php the_title('<h4>', '</h4>'); ?></a>
                             <ul class="post-info">
                                 <li><a href="<?php esc_url( get_author_posts_url(get_the_author_meta('ID'))) ?>"> <?php the_author() ?></a></li>
-                                <li><a href="#"><?php the_date('M d, Y') ?></a></li>
-                                <li><a href="#"> <?php 
+                                <li><a href="<?php the_permalink(); ?>"><?php the_date('M d, Y') ?></a></li>
+                                <li><a href="<?php the_permalink(); ?>"> <?php 
                                                     if (get_comments_number()):
                                                          get_comments_number();
                                                     else:
