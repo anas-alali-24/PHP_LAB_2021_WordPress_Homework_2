@@ -165,7 +165,7 @@ get_header();
                             <span><?php the_category(' . ') ?></span>
                             <a href="<?php the_permalink(); ?>"><?php the_title('<h4>', '</h4>'); ?></a>
                             <ul class="post-info">
-                                <li><a href="#"> <?php the_author() ?></a></li>
+                                <li><a href="<?php esc_url( get_author_posts_url(get_the_author_meta('ID'))) ?>"> <?php the_author() ?></a></li>
                                 <li><a href="#"><?php the_date('M d, Y') ?></a></li>
                                 <li><a href="#"> <?php 
                                                     if (get_comments_number()):
@@ -179,11 +179,12 @@ get_header();
                                 <div class="post-options">
                                     <div class="row">
                                         <div class="col-lg-12">
-                                        <ul class="post-tags">
-                                        <li><i class="fa fa-tags"></i></li>
-                                        <li><a href="#">Best Templates</a>,</li>
-                                        <li><a href="#">TemplateMo</a></li>
-                                    </ul>
+                                        <?php if( has_tag() ) : ?>
+                                          <ul class="post-tags">
+                                              <li><i class="fa fa-tags"></i></li>
+                                              <?php echo get_the_tag_list( '<li><a href="#">', ' ', '</a>,</li>' ); ?>
+                                          </ul>
+                                          <?php endif; ?>
                                 </div>
                             </div>
                         </div>
